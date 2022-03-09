@@ -4,11 +4,19 @@
 \alias{getMainCategory}
 \title{Get News Main Categories}
 \usage{
-getMainCategory()
+getMainCategory(fresh = FALSE)
+}
+\arguments{
+\item{fresh}{If TRUE, get data from internet. 
+Default is FALSE which is return with cache.}
 }
 \value{
 Get data.frame(chr:cate_name, chr:url).
 }
 \description{
 Get daum news main category names and ids recently.
+}
+\examples{
+  getMainCategory()
+
 }
